@@ -50,8 +50,12 @@ boat0 = Image("00000:"
              "00000:"
              "00000")
 all=[boat1,boat2,boat3,boat4,boat5,boat6,boat7,boat8,boat9]
+nonazi = [Image.ANGRY, boat0, Image.SAD, boat0]
+allopp = [boat1,boat2,boat3,boat4,boat5,boat6,boat7,boat8,boat9,boat8,boat7,boat6,boat5,boat4,boat3,boat2,boat1,boat2,boat3,boat4,boat5,boat6,boat7,boat8,boat9,boat8,boat7,boat6,boat5,boat4,boat3,boat2,boat1]
 while True:
-    if button_a.is_pressed() or button_b.is_pressed():
-        display.show(all , delay=100)
+    if button_a.is_pressed():
+        display.show(allopp , delay=100)
+    elif button_b.is_pressed():
+        display.show(all , delay=1009)
     else:
         display.show(boat0)
